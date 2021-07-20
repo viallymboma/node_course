@@ -1,0 +1,43 @@
+// ------------------------------------New module Path------------------------------
+
+const path = require('path');
+// const { delimiter } = require('path/posix');
+console.log(path.sep)
+const filePath = path.join('/content/', 'subfolder', 'test.txt');
+console.log(filePath)
+
+const base = path.basename(filePath)
+console.log(base)
+
+// const absolute = path.delimiter(filePath)
+// console.log(absolute)
+console.log(`--------1----------`)
+console.log(path.dirname(filePath))
+console.log(`--------2----------`)
+console.log(path.extname(filePath))
+console.log(`--------3----------`)
+// console.log(path.format())
+console.log(`--------4----------`)
+console.log(path.isAbsolute(filePath))
+console.log(`--------5----------`)
+console.log(path.join())
+console.log(`--------6----------`)
+console.log(path.join(filePath))
+console.log(`--------7----------`)
+console.log(path.normalize(filePath))
+console.log(`--------8----------`)
+console.log(path.parse(filePath))
+console.log(`--------9----------`)
+// console.log(path.posix)
+console.log(`--------10----------`)
+// console.log(path.relative(filePath))
+console.log(`--------11----------`)
+console.log(path.resolve())
+console.log(`--------12----------`)
+console.log(path.sep)
+console.log(`--------13----------`)
+console.log(path.toNamespacedPath(filePath))
+console.log(`--------14----------`)
+// console.log(path.win32(filePath))
+console.log(`--------15----------`)
+console.log(path.resolve(__dirname, 'content', 'subfolder', 'test.txt'))
